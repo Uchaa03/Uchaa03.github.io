@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+
+</head>
+<body class="bg-dark text-light">
+    <header>
+        <nav class="navbar bg-dark text-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/computadora.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+                    <h1 class="text-light d-inline-block align-text-top">DESARROLLANDO UNA APLICACIÓN WEB</h1>
+                </a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg bg-dark text-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html"><h5 class="text-light">Propuesta de proyecto</h5></a>
+                        <a class="nav-link" href="informe.html"><h5 class="text-light">Informe Técnico</h5></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenedor con el contenido del proyecto completo -->
+    <main id="main-content" class="container">
+        <section id="seccion1">
+            <h3>Idea de la Aplicación</h3>
+            <p>Mi planteamiento sobre mi aplicación web, es un sistema de gestión de reparación de informática en general, esta ocurrencia viene de que llevo 3 años trabajando como técnico,
+                y si hay algo que considere malo por mi experencia, en el que ha sido mi puesto de trabajo es la forma en la que se realiza la gestión de las reparaciones, tanto para el cliente
+                como para el empleado que las repara, ya que siempre consideré que se podría hacer de una forma mas moderna cómoda.</p>
+
+            <p>Por lo tanto considero que una aplicaición web en la que el técnico pueda gestionar sus reparaciones clasificandolas por tipos y llevar el tiempo de cada una, seria una forma
+                correcta y organizada, además de poder almacenar toda la información sobre los clientes y poder usarlas en futuras reparaciones si se hacen clientes habituales con una base datos y
+                más funcionalidades que comentaremos más adelante</p>
+        </section>
+
+        <section id="seccion2">
+            <h3>Público Objetivo</h3>
+            <p>Principalmente el público objetivo serían las rmpresas de reparación de informática grandes, o pequeñas, ya que mi idea parte principalmente, de mi experencia trabajando en
+                MediaMarkt, pero este idea esta pensada para todo tipo de empresas ya que podria funcionar en un pequeño negocio de ciudidad que tenga una buena cantidad de clientes, que las hay también.</p>
+
+            <p>Y ya no solo eso tambien esta pensada para el cliente ya que la una de las funcionalidades que explicare mas tarde sería que el cliente tenga acceso a través de un QR, por el que
+                pueda ver el estado de su reparación e in cluso abrir un ticket de consulta para que no sea necesario pasarse a la tienda a consultar el presupuesto de reparación o en que estado esta
+                dicha reparación.</p>
+        </section>
+
+        <section id="seccion3">
+            <h3>Análisis de Mercado</h3>
+            <p>Existen ya aplicaciones web y aplicaciones móviles, que ya se utilizan para la gestión de reperaciones y procesado de datos y facturación de clientes como por ejemplo podría ser
+                distriktok, que cumplimenta muchas funciones de las comentadas en mi idea como la de gestionar datos de los clientes junto con sus reparaciones, pero solo trata del entorno del
+                tebajador en ningun momento plantea la posibilidad de proporcional una atención más facil intutiva y moderna para el cliente.</p>
+
+            <p><a href="https://www.distritok.com/aplicaciones/programa-de-gestion/reparaciones/" target="_blank">Distritok</a></p>
+
+            <p>Tambien existen programas CRM para la gestión de clientes, pero estos no abarcan la sección de reparación ni organización para el técnico, algunos de ellos podrián ser SalesForce o
+            Microsoft Dynamics, pero comento, son para la gestión de clinetes son generales no especificos para lo que yo busco, que e sun programa que permite la organación gestion y reparación de
+            los dispositivos, y la gestión y facturación y comunicación de los clientes</p>
+
+        </section>
+
+        <section id="seccion4">
+            <h3>Funcionalidades Clave</h3>
+            <h6>Sistema de autentificación</h6>
+            <p>Un sistema de Login que nos permitera tener un resgistro de que técnico esta creando la reparación si el movil lo repararan o modifican la reparaicón varios técnicos,
+            y ademas saber que técnico gestiona un ticket generado por el cliente, y tambien el cliente saber porque técnico ha sido o esta siendo atendido</p>
+
+            <h6>Sistema de creación reparación</h6>
+            <p>Un sistema de Creación y gestión de reparaciones donde rellenar datos e informe del dispositvo en el estado que entra, fecha, diagnostico previo, en el que se agregan
+            los datos de los clientes y se genere el QR por el que el cliente pueda acceder a la orden de reparación y abrir un ticket o repsonder a uno generado por el tecnico como
+            puede ser el presupuesto de reparaición</p>
+
+            <h6>Sistema de gestión de reparación</h6>
+            <p>UN sistema que nos permita ver las reparaciónes y su estado, ademas de clasificarlas para poder buscar una ya realizada que tiene un problemas de grantía, o para poder editar
+            una creada con un dato erroneo, o poder eliminarla en caso de que nos se repare ni toque el dispositivo</p>
+
+            <h6>Base de datos de clientes y de reparaciones</h6>
+            <p>Para poder cumplimentar el sistema de gestión de reparaciones nos haria falta comnicación con una base de datos para poder almacenar y guardar todos los registros de crecación modificación
+            elimincaicón, y busqueda</p>
+
+            <h6>Posible API de guía en reparaciones</h6>
+            <p>También seria interesante poder implementar una guía similar a la que tiene Apple para sus dispositivos que indica instrucciones de reparación sobre sus dispositivos, pues lo mismo pero
+            para los dispositivos de telefonía android, con el objetivo de proporcionar una herramienta completa de trabajo para los técnicos, aunque esto si que es verdad que podria hacerse algo super
+            extenso ya que la cantidad de dispositivos a nivel europeo que existen que no son APPLE son una gran multitud, aunque se podria ir implementando poco a poco</p>
+        </section>
+
+        <section id="seccion5">
+            <h3>Tecnologías Seleccionadas</h3>
+            <p>HTML es el estándar definido por la W3C para la creación/maquetación de una aplicación web, por lo tanto esta es esencial para la creación de la estrucuturación de cualquier aplicación web</p>
+
+            <p>CSS, esencial para la aplicaicón de estilos y efectos junto con HTML y JS para dar una aparencia correcta tanto a nivel visual como en un Usabilidad y Accesibilidad</p>
+
+            <p>JavaScript es uno de los lenguajes de programación que mejor se adapta a estos dos lenguajes de marcas además de estar integrado a día de hoy practicamente en todos los navegadores, es versátil facil de aprender y usar, y lo utilizan
+            en muchos casos de existo grande como en Google, Amazon, Facebook</p>
+
+            <p>Tambien utilizaría para desarrollar el proyecto React, una librería de JS que tiene un montón de herramientas y funcionalidades que nos permitirían realizar todo lo propuesto anteriormente en lo comentado
+            ya que este es la unión de html y js en un mismo archivo conocido como .jsx, y nos permite hacer una aplicación web reactiva, que nos proporciona mayor comodidad y velocidad en la aplicación
+            que estar cargando contenido y cosas continuamente ya que este lo hace de manera reactiva, sin refrescar página, este se puede asociar a otras librerias que nos permitiran poder implementar más ideas, y tiene una
+            excelente documentación y comunidad de desarrollo, para mi lo más llamativo que tiene falcilidad para generar aplicaciones móviles utilizando el mismo código utlizado en la aplicación web</p>
+
+            <p>Como entorno de desarrollo estan muy bien Visual Studio Code, o Webstorm, que es el que yo utlizaré ya que este viene ya mejor equipoado por predeterminado y esta mas automatizado en la
+            instalación de herramientas necesarias para la resolución de problemas, y para mi en lo perosnal es más cómodo de usar que Visual Studio</p>
+
+            <p>Algunas de las páginas que tome como referencia para la decision son las siguientes:</p>
+            <p><a href="https://blog.shakersworks.com/es-es/papel-crucial-javascript-desarrollo-web">El papel crucial de JS en el desarrollo Web</a></p>
+            <p><a href="https://www.tithink.com/es/2018/11/14/7-razones-para-utilizar-react/">Razones por las que utilzar React</a></p>
+        </section>
+    </main>
+
+    <!-- Barra lateral para marcadores -->
+    <div id="sidebar">
+        <h6>Tabla de contenidos</h6>
+        <a href="#seccion1">Idea de la Aplicación</a>
+        <a href="#seccion2">Público Objetivo</a>
+        <a href="#seccion3">Análisis de Mercado</a>
+        <a href="#seccion4">Funcionalidades Clave</a>
+        <a href="#seccion5">Tecnologías Seleccionadas</a>
+    </div>
+</body>
+</html>
